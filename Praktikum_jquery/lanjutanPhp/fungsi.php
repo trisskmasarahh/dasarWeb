@@ -16,7 +16,13 @@ function hitungUmur($thnLahir, $thnHariIni) {
     $umur = $thnHariIni - $thnLahir;
     return $umur;
 }
+function perkenalan($nama, $salam="Asalamualaikum"){
+    echo $salam.",";
+    echo "Perkenalkan, nama saya ".$nama."<br/>";
+    echo "Umur saya adalah ".hitungUmur(2004, 2024)." tahun";
+}
+perkenalan("Sukma");
 
-echo "<br>";
-echo "Umur saya adalah ".hitungUmur(2004, 2024)." tahun";
+// echo "<br>";
+// echo "Umur saya adalah ".hitungUmur(2004, 2024)." tahun";
 ?>
