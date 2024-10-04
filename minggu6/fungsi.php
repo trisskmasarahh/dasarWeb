@@ -1,5 +1,5 @@
 <?php
-function perkenalan($nama, $salam) {
+function perkenalan($nama, $salam ="Assalamualaikum") {
     echo $salam . ", ";
     echo "Perkenalkan, nama saya " . $nama . "<br>";
     echo "Senang berkenalan dengan Anda<br>";
@@ -15,7 +15,7 @@ $saya = "Elok";
 $ucapanSalam = "Selamat pagi";
 
 // Memanggil fungsi dengan variabel
-perkenalan($saya, $ucapanSalam);
+perkenalan($saya);
 // function perkenalan() {
 //     echo "Assalamualaikum, ";
 //     echo "Perkenalkan, nama saya Sarah<br>"; 
