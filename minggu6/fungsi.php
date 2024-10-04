@@ -3,8 +3,18 @@ function hitungUmur($tahun_lahir, $tahun_sekarang) {
     $umur = $tahun_sekarang - $tahun_lahir;
     return $umur;
 }
+function perkenalan($nama, $salam="Assalamualaikum") {
+    echo $salam . ", ";
+echo "Perkenalkan, nama saya " . $nama  
+. "<br>";
+    echo "Saya berusia " . hitungUmur(2004, 
+2024) . " tahun<br>";
+    echo "Senang berkenalan dengan Anda<br>";
+}
 
-echo "Umur saya adalah " . hitungUmur(2004, 2024) . " tahun"; // Isi sesuai dengan tahun lahir Anda
+perkenalan("Sarah");
+
+// echo "Umur saya adalah " . hitungUmur(2004, 2024) . " tahun"; // Isi sesuai dengan tahun lahir Anda
 // function perkenalan($nama, $salam ="Assalamualaikum") {
 //     echo $salam . ", ";
 //     echo "Perkenalkan, nama saya " . $nama . "<br>";
