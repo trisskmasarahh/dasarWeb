@@ -1,21 +1,27 @@
 <?php
-function perkenalan($nama, $salam ="Assalamualaikum") {
-    echo $salam . ", ";
-    echo "Perkenalkan, nama saya " . $nama . "<br>";
-    echo "Senang berkenalan dengan Anda<br>";
+function hitungUmur($tahun_lahir, $tahun_sekarang) {
+    $umur = $tahun_sekarang - $tahun_lahir;
+    return $umur;
 }
 
-// Memanggil fungsi dengan argumen
-perkenalan("Hamdana", "Hallo");
+echo "Umur saya adalah " . hitungUmur(2004, 2024) . " tahun"; // Isi sesuai dengan tahun lahir Anda
+// function perkenalan($nama, $salam ="Assalamualaikum") {
+//     echo $salam . ", ";
+//     echo "Perkenalkan, nama saya " . $nama . "<br>";
+//     echo "Senang berkenalan dengan Anda<br>";
+// }
 
-echo "<hr>";
+// // Memanggil fungsi dengan argumen
+// perkenalan("Hamdana", "Hallo");
 
-// Mendefinisikan variabel
-$saya = "Elok";
-$ucapanSalam = "Selamat pagi";
+// echo "<hr>";
 
-// Memanggil fungsi dengan variabel
-perkenalan($saya);
+// // Mendefinisikan variabel
+// $saya = "Elok";
+// $ucapanSalam = "Selamat pagi";
+
+// // Memanggil fungsi dengan variabel
+// perkenalan($saya);
 // function perkenalan() {
 //     echo "Assalamualaikum, ";
 //     echo "Perkenalkan, nama saya Sarah<br>"; 
