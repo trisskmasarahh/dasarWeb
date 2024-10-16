@@ -21,4 +21,17 @@
         } else {
             echo "Tidak ada data yang aman.<br>";
         }
-?>
+        if (isset($_POST['email'])) {
+            $email = $_POST['email'];
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                echo "Email Valid: " . $email;
+            } else {
+                echo "Email Tidak Valid: " . $email;
+            }
+        } else {
+            echo "Email belum diisi.";
+        }
+    ?>
+</body>
+</html>
+
