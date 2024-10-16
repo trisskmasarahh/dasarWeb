@@ -14,5 +14,11 @@ if (preg_match($pattern, $text, $matches)) {
 } else {
     echo "Tidak ada yang cocok";
 } 
+echo "<br><br>";
+$pattern = '/apple/';
+    $replcement = 'banana';
+    $text = 'I like apple pie.';
+    $newtext = preg_replace($pattern, $replcement, $text);
+    echo $newtext;
 
 ?>
