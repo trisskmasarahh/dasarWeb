@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#upload-form').suubmit(function(e) {
+    $('#upload-form').submit(function(e) {
         e.preventDefault();
         var formData = new FormData(this);
 
