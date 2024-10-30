@@ -10,7 +10,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
-
     // Simulasi login (nanti ini bisa dihubungkan ke server PHP)
     // Jika login berhasil, tampilkan form pembelian tiket
     if (username && password) {

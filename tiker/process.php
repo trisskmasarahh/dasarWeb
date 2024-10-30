@@ -72,9 +72,9 @@ if (isset($_POST['ticketType']) && isset($_POST['ticketQty'])) {
 if (isset($_POST['paymentMethod']) && isset($_POST['paymentDetails'])) {
     $paymentMethod = $_POST['paymentMethod'];
     $paymentDetails = $_POST['paymentDetails'];
-    $totalPrice = $_POST['totalPrice']; // Jika Anda ingin menambahkan total harga
+    $totalPrice = $_POST['totalPrice']; // menambahkan total harga
     
-    // Tampilkan alert menggunakan echo dengan JavaScript
+    // Talert menggunakan echo dengan JavaScript
     echo "<script>alert('Pembayaran berhasil menggunakan metode " . $paymentMethod . ". Detail: " . $paymentDetails . ". Total: Rp. " . $totalPrice . "');</script>";
 }
 

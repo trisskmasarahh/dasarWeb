@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <h2>Login untuk Membeli Tiket Wisata Banyu Biru</h2>
+        <!-- login -->
         <form id="loginForm" action="process.php" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -18,9 +19,9 @@
             
             <button type="submit" name="login">Login</button>
         </form>
-
+        <!-- pendaftaran akun baru-->
         <p>Belum punya akun? <a href="#" id="registerLink">Daftar di sini</a></p>
-
+        <!-- proses regitrasi -->
         <div id="registerSection" style="display: none;">
             <h3>Registrasi Akun Baru</h3>
             <form id="registerForm" action="process.php" method="post">
@@ -33,7 +34,7 @@
                 <button type="submit" name="register">Daftar</button>
             </form>
         </div>
-
+        <!-- pemilihan tiket -->
         <div id="ticketSection" style="display: none;">
             <h3>Pembelian Tiket</h3>
             <form id="ticketForm">
@@ -42,13 +43,13 @@
                 
                 <label for="ticketQtyAnak">Jumlah Tiket Anak (Rp. 5.000):</label>
                 <input type="number" id="ticketQtyAnak" name="ticketQtyAnak" min="0" value="0" required>
-
+                <!-- harga total dan perhitungan tiket -->
                 <h4>Total Pembayaran: Rp. <span id="totalPrice">0</span></h4>
-                
+                <!-- untuk tombol next ke pembayaran -->
                 <button type="button" id="nextToPayment">Lanjut ke Pembayaran</button>
             </form>
         </div>
-
+<!-- pemilihan pembayaran -->
         <div id="paymentSection" style="display: none;">
             <h3>Metode Pembayaran</h3>
             <form id="paymentForm" action="process.php" method="post">
@@ -58,10 +59,10 @@
                     <option value="credit_card">Kartu Kredit</option>
                     <option value="ewallet">e-Wallet</option>
                 </select>
-
+                <!-- detail pemabayaran -->
                 <label for="paymentDetails">Detail Pembayaran:</label>
                 <input type="text" id="paymentDetails" name="paymentDetails" placeholder="Masukkan nomor rekening/kartu" required>
-
+                <!-- total pembayaran dari pembelian tiket  -->
                 <input type="hidden" id="hiddenTotalPrice" name="totalPrice">
                 <button type="submit">Konfirmasi Pembelian</button>
             </form>
