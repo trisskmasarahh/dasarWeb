@@ -18,7 +18,7 @@ if (!$obat) {
 <head>
     <meta charset="UTF-8">
     <title>Edit Obat</title>
-    <link rel="stylesheet" href="style.css"> <!-- Your CSS file -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
