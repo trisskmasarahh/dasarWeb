@@ -1,8 +1,8 @@
 <?php
-require 'connection.php';
+include 'connection.php';
 
 $id = $_GET['id'];
-$stmt = $pdo->prepare("DELETE FROM OBAT WHERE ID_obat = :id");
+$stmt = $conn->prepare("DELETE FROM OBAT WHERE ID_obat = :id");
 $stmt->bindParam(':id', $id);
 
 if ($stmt->execute()) {
